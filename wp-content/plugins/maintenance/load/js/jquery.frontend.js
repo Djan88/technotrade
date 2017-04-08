@@ -15,12 +15,12 @@ jQuery(document).ready(function() {
 		jQuery('#btn-open-login-form').on('click', function() {
 			jQuery('body').toggleClass('open-login-form');
 			
-			if (jQuery(this).find('i').hasClass('foundicon-lock')) {
+			if (jQuery(this).find('i').hasClass('fi-lock')) {
 				jQuery(this).find('i').removeClass();
-				jQuery(this).find('i').addClass('foundicon-unlock');
+				jQuery(this).find('i').addClass('fi-unlock');
 			} else {
 				jQuery(this).find('i').removeClass();
-				jQuery(this).find('i').addClass('foundicon-lock');
+				jQuery(this).find('i').addClass('fi-lock');
 			}
 			
 		});
@@ -29,13 +29,8 @@ jQuery(document).ready(function() {
 });
 
 jQuery(window).load(function() { 
-	var isiPhone = /iphone/i.test(navigator.userAgent.toLowerCase());
-	var isiPad 	 = /ipad/i.test(navigator.userAgent.toLowerCase());
+	jQuery('#content').center();	
 
-	if (!isiPhone && !isiPad) {
-		jQuery('#content').center();	
-	}
-	
 	jQuery('.main-container > div:not(".preloader")').each(function() {
 		jQuery(this).css({'visibility': 'visible'});
 	});
@@ -46,18 +41,23 @@ jQuery(window).load(function() {
 });
 
 jQuery(window).resize(function() { 
-	var isiPhone = /iphone/i.test(navigator.userAgent.toLowerCase());
-	var isiPad = /ipad/i.test(navigator.userAgent.toLowerCase());
-	if (!isiPhone && !isiPad) jQuery('#content').center();	
+	jQuery('#content').center();	
+	var window_w = jQuery('.logotype').width();
+	jQuery('.logo').css("max-width", window_w + "px" );
+	jQuery('.logo-retina').css("max-width", window_w + "px" );
 });
  
 jQuery.fn.center = function () {
-    if ((jQuery(window).width() > 767) && (jQuery(window).height() > 767)) {
+	var window_h = Math.max(0, ((jQuery(window).height() - jQuery(this).outerHeight()) / 2 ) + jQuery(window).scrollTop());
+	var content_h = jQuery('.logotype').height();
+  if ( window_h > content_h ) {
 		this.css("position","absolute");
-		this.css("top", Math.max(0, ((jQuery(window).height() - jQuery(this).outerHeight()) / 2) + jQuery(window).scrollTop()) + "px");
+		this.css("top", window_h + "px");
+	
 	} else {
 		this.css("position","relative");
 		this.css("top","0");
+
 	}	
 	return this;
 }
