@@ -10,8 +10,8 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
     <!-- Slider -->
 
-    <link rel="stylesheet" href="style.css">
-    <title><?php the_title(); ?></title>
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+    <title>Site</title>
 </head>
 <body>
     <header>
@@ -270,8 +270,8 @@
                 autoplay: true,
                 autoplaySpeed: 3000,
                 fade: true,
-                prevArrow: '<button type="button" class="slick-prev"><img src="<?php bloginfo('template_url'); ?>/img/left.png" alt="" /></button>',
-                nextArrow: '<button type="button" class="slick-next"><img src="<?php bloginfo('template_url'); ?>/img/right.png" alt="" /></button>',
+                prevArrow: '<button type="button" class="slick-prev"><img src="img/left.png" alt="" /></button>',
+                nextArrow: '<button type="button" class="slick-next"><img src="img/right.png" alt="" /></button>',
                 responsive: [
                 {
                   breakpoint: 768,
