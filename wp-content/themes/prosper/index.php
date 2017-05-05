@@ -27,9 +27,9 @@
               </button>
               <a class="navbar-brand" href="/">
                 <picture>
-                    <source srcset="img/smal_logo.png" media="(max-width: 768px)">
+                    <source srcset="<?php bloginfo('template_url'); ?>/img/smal_logo.png" media="(max-width: 768px)">
                     <!-- <source srcset="img/medium_logo.png" media="(max-width: 768px)"> -->
-                    <img src="img/logo.png" alt="">
+                    <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="">
                 </picture>
               </a>
             </div>
@@ -40,7 +40,7 @@
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default"><img src="img/search-icon.png" alt=""></button>
+                <button type="submit" class="btn btn-default"><img src="<?php bloginfo('template_url'); ?>/img/search-icon.png" alt=""></button>
               </form>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">О бренде</a></li>
@@ -81,7 +81,7 @@
                             <h1>Неужели это <br> моя посуда?</h1>
                             <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН</p>
                             <a href="">узнать больше</a>
-                            <img src="img/slde-box.png" alt="" class="slider__box">
+                            <img src="<?php bloginfo('template_url'); ?>/img/slde-box.png" alt="" class="slider__box">
                         </div>
                     </div>
                     <div class="slider__item">
@@ -89,7 +89,7 @@
                             <h1>Неужели это <br> моя посуда?</h1>
                             <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН</p>
                             <a href="">узнать больше</a>
-                            <img src="img/capsuly.png" alt="" class="slider__box">
+                            <img src="<?php bloginfo('template_url'); ?>/img/capsuly.png" alt="" class="slider__box">
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                     <div class="col-md-6">
                         <div class="news__block">
                             <div class="col-md-4">
-                                <img src="img/news1.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/img/news1.png" alt="">
                             </div>
                             <div class="col-md-8">
                                 <h3>15.04.17 Мы говорим нет вредным добавкам</h3>
@@ -120,7 +120,7 @@
                     <div class="col-md-6">
                         <div class="news__block">
                             <div class="col-md-4">
-                                <img src="img/sert.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/img/sert.png" alt="">
                             </div>
                             <div class="col-md-8">
                                 <h3>15.04.17 Победа в выставке - Стиральные порошки "Prosper"</h3>
@@ -144,7 +144,7 @@
                                 <p>Hand Wash Lemon</p>
                             </div>
                             <div class="product__block__content">
-                                <img src="img/poroshok.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/img/poroshok.png" alt="">
                             </div>
                             <div class="product__block__footer">
                                 <a href="">узнать больше</a>
@@ -158,7 +158,7 @@
                                 <p>ДЛЯ СТИРКИ</p>
                             </div>
                             <div class="product__block__content">
-                                <img src="img/gel.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/img/gel.png" alt="">
                             </div>
                             <div class="product__block__footer">
                                 <a href="">узнать больше</a>
@@ -172,7 +172,7 @@
                                 <p>для стирки</p>
                             </div>
                             <div class="product__block__content">
-                                <img src="img/capsuly.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/img/capsuly.png" alt="">
                             </div>
                             <div class="product__block__footer">
                                 <a href="">узнать больше</a>
@@ -186,7 +186,7 @@
                                 <p>для черного белья</p>
                             </div>
                             <div class="product__block__content">
-                                <img src="img/conditioner.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/img/conditioner.png" alt="">
                             </div>
                             <div class="product__block__footer">
                                 <a href="">узнать больше</a>
@@ -263,15 +263,15 @@
     <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/slick.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/slick.js"></script>
     <script>
         $(document).ready(function(){
             $('.slider__container').slick({
                 autoplay: true,
                 autoplaySpeed: 3000,
                 fade: true,
-                prevArrow: '<button type="button" class="slick-prev"><img src="img/left.png" alt="" /></button>',
-                nextArrow: '<button type="button" class="slick-next"><img src="img/right.png" alt="" /></button>',
+                prevArrow: '<button type="button" class="slick-prev"><img src="<?php bloginfo('template_url'); ?>/img/left.png" alt="" /></button>',
+                nextArrow: '<button type="button" class="slick-next"><img src="<?php bloginfo('template_url'); ?>/img/right.png" alt="" /></button>',
                 responsive: [
                 {
                   breakpoint: 768,
