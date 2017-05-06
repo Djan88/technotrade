@@ -677,7 +677,7 @@ header {
       display: block;
       box-sizing: border-box;
       text-transform: uppercase; }
-      header .nav li a:hover {
+      header .nav li a:hover, header .nav li.current-menu-item a {
         background-color: #7c1e6c;
         -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out; }

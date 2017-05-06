@@ -36,13 +36,6 @@
             </div>
             <button type="submit" class="btn btn-default"><img src="<?php bloginfo('template_url'); ?>/img/search-icon.png" alt=""></button>
           </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">О бренде</a></li>
-            <li><a href="#">преимущества</a></li>
-            <li><a href="#">Продукция</a></li>
-            <li><a href="#">новости</a></li>
-            <li><a href="#">контакты</a></li>
-          </ul>
           <?php 
             $menu = wp_nav_menu(array('menu' => 'Main Navigation', 'container' => false, menu_class => 'nav navbar-nav navbar-right' ));
             echo $menu;
