@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
     <!-- Slider -->
 
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/img/style.css">
     <title>Site</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
               <a class="navbar-brand" href="/">
                 <picture>
                     <source srcset="<?php bloginfo('template_url'); ?>/img/smal_logo.png" media="(max-width: 768px)">
-                    <!-- <source srcset="img/medium_logo.png" media="(max-width: 768px)"> -->
+                    <!-- <source srcset="<?php bloginfo('template_url'); ?>/img/medium_logo.png" media="(max-width: 768px)"> -->
                     <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="">
                 </picture>
               </a>
@@ -74,23 +74,21 @@
         <!-- Contact -->
 
         <section class="slider">
-            <div class="container">
-                <div class="slider__container" >
-                    <div class="slider__item">
-                        <div class="content__slider">
-                            <h1>Неужели это <br> моя посуда?</h1>
-                            <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН</p>
-                            <a href="">узнать больше</a>
-                            <img src="<?php bloginfo('template_url'); ?>/img/slde-box.png" alt="" class="slider__box">
-                        </div>
+            <div class="slider__container" >
+                <div class="slider__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg" alt="" class="slide__img">
+                    <div class="content__slider">
+                        <h1>Неужели это <br>моя посуда?</h1>
+                        <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН </p>
+                        <a href="">узнать больше</a>
                     </div>
-                    <div class="slider__item">
-                        <div class="content__slider">
-                            <h1>Неужели это <br> моя посуда?</h1>
-                            <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН</p>
-                            <a href="">узнать больше</a>
-                            <img src="<?php bloginfo('template_url'); ?>/img/capsuly.png" alt="" class="slider__box">
-                        </div>
+                </div>
+                <div class="slider__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg" alt="" class="slide__img">
+                    <div class="content__slider">
+                        <h1>Неужели это <br>моя посуда?</h1>
+                        <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН </p>
+                        <a href="">узнать больше</a>
                     </div>
                 </div>
             </div>
@@ -222,7 +220,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Производитель Group Prosper Limited, Hong Kong </h3>
+                    <h3>Производитель <br> Group Prosper Limited, Hong Kong </h3>
                     <p>Тел/факс: +8 528 199 09 55,</p>
                     <p>Email: <a href="mailto:">info@group-prosper.com</a></p>
                     <h3>Официальый дистрибьютер в России ООО «ТЕХНОТРЕЙД», г. Москва,</h3>
@@ -241,9 +239,6 @@
                         <li><a href="">Гели для стирки PROSPER</a></li>
                         <li><a href="">Кондиционеры для белья PROSPER</a></li>
                         <li><a href="">Гель-капсулы PROSPER</a></li>
-                        <li><a href="">Специальные средства PROSPER</a></li>
-                        <li><a href="">Средства для мытья посуды PROSPER</a></li>
-                        <li><a href="">PROSPER Professional</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -263,34 +258,14 @@
     <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/slick.js"></script>
+    <script src="assets/js/slick.js"></script>
     <script>
         $(document).ready(function(){
             $('.slider__container').slick({
                 autoplay: true,
                 autoplaySpeed: 3000,
-                fade: true,
                 prevArrow: '<button type="button" class="slick-prev"><img src="<?php bloginfo('template_url'); ?>/img/left.png" alt="" /></button>',
-                nextArrow: '<button type="button" class="slick-next"><img src="<?php bloginfo('template_url'); ?>/img/right.png" alt="" /></button>',
-                responsive: [
-                {
-                  breakpoint: 768,
-                  settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px'
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                  }
-                }
-              ]
+                nextArrow: '<button type="button" class="slick-next"><img src="<?php bloginfo('template_url'); ?>/img/right.png" alt="" /></button>'
             });
         });
     </script>
