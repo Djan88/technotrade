@@ -11,12 +11,12 @@
                         <a href=""><span></span></a>
                         <a href=""><span></span></a>
                     </div>
-                    <ul class="list__link">
+                    <!-- <ul class="list__link">
                         <li><a href="">Стиральные порошки PROSPER</a></li>
                         <li><a href="">Гели для стирки PROSPER</a></li>
                         <li><a href="">Кондиционеры для белья PROSPER</a></li>
                         <li><a href="">Гель-капсулы PROSPER</a></li>
-                    </ul>
+                    </ul> -->
                     <?php if (!dynamic_sidebar("second-widget-area") ) : ?><?php endif; ?>
                 </div>
                 <div class="col-md-4">
