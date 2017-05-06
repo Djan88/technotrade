@@ -696,10 +696,14 @@ header {
       height: 33px;
       cursor: pointer;
       padding: 0; }
-    header .navbar-form .form-control {
-      border-radius: 4px;
-      background-color: #3f0c39;
-      border: 1px solid #3f0c39; }
+header .navbar-form .form-control 
+{
+  border-radius: 4px;
+  background-color: #3f0c39;
+  border: 1px solid #3f0c39;
+  color: #fff;
+  font-weight: 500;
+}
       header .navbar-form .form-control:focus {
         background-color: #ad2a95;
         border: 1px solid #ad2a95;
