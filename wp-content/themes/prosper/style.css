@@ -1083,3 +1083,11 @@ footer {
         background-position: -148px 7px; }
 
 /*# sourceMappingURL=style.css.map */
+.list_link
+{
+  padding: 0;
+}
+.list_link li
+{
+  list-style: none;
+}
