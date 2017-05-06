@@ -11,23 +11,17 @@
                         <a href=""><span></span></a>
                         <a href=""><span></span></a>
                     </div>
-                    <!-- <ul class="list__link">
-                        <li><a href="">Стиральные порошки PROSPER</a></li>
-                        <li><a href="">Гели для стирки PROSPER</a></li>
-                        <li><a href="">Кондиционеры для белья PROSPER</a></li>
-                        <li><a href="">Гель-капсулы PROSPER</a></li>
-                    </ul> -->
-                    <?php if (!dynamic_sidebar("second-widget-area") ) : ?><?php endif; ?>
+                    <div class="list__link">
+                        <?php if (!dynamic_sidebar("second-widget-area") ) : ?><?php endif; ?>
+                    </div>
+                    
                 </div>
                 <div class="col-md-4">
                     <div class="phone">+7 (495) <span>134 37 73</span></div>
-                    <ul class="list__link">
-                        <li><a href="">Специальные средства PROSPER</a></li>
-                        <li><a href="">Средства для мытья посуды PROSPER</a></li>
-                        <li><a href="">Средства для дома PROSPER</a></li>
-                        <li><a href="">PROSPER Professional</a></li>
-                    </ul>
-                    <?php if (!dynamic_sidebar("third-widget-area") ) : ?><?php endif; ?>
+                    <div class="list__link">
+                        <?php if (!dynamic_sidebar("third-widget-area") ) : ?><?php endif; ?>
+                    </div>
+                    
                 </div>
             </div>
         </div>
