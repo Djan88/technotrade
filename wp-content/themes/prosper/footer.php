@@ -2,12 +2,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Производитель <br> Group Prosper Limited, Hong Kong </h3>
-                    <p>Тел/факс: +8 528 199 09 55,</p>
-                    <p>Email: <a href="mailto:">info@group-prosper.com</a></p>
-                    <h3>Официальый дистрибьютер в России ООО «ТЕХНОТРЕЙД», г. Москва,</h3>
-                    <p>Тел/факс: +7 (495) 134 37 73,</p>
-                    <p>Email: <a href="mailto:">info@tecnotrade.ru</a></p>
                     <?php if (!dynamic_sidebar("first-widget-area") ) : ?><?php endif; ?>
                 </div>
                 <div class="col-md-4">
