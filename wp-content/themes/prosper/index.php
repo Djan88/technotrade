@@ -28,7 +28,6 @@
               <a class="navbar-brand" href="/">
                 <picture>
                     <source srcset="<?php bloginfo('template_url'); ?>/img/smal_logo.png" media="(max-width: 768px)">
-                    <!-- <source srcset="<?php bloginfo('template_url'); ?>/img/medium_logo.png" media="(max-width: 768px)"> -->
                     <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="">
                 </picture>
               </a>

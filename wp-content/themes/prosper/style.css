@@ -23,6 +23,34 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
+  html, body {
+      height: 100%;
+  }
+body {
+    font-weight: normal;
+    font-style: normal;
+    @include font('light');
+    color: #000;
+    // background-color: #6e004f;
+}
+
+* {
+     -webkit-font-smoothing: antialiased;
+}
+
+header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#67195a+0,631856+100 */
+    background: #67195a; /* Old browsers */
+    background: -moz-linear-gradient(top, #67195a 0%, #631856 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #67195a 0%,#631856 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #67195a 0%,#631856 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67195a', endColorstr='#631856',GradientType=0 ); /* IE6-9 */
+}
+main {
+    min-height: calc(100% - 426px);
+    position: relative;
+}
+
 
 /* Sections
    ========================================================================== */
