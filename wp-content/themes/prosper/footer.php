@@ -8,6 +8,7 @@
                     <h3>Официальый дистрибьютер в России ООО «ТЕХНОТРЕЙД», г. Москва,</h3>
                     <p>Тел/факс: +7 (495) 134 37 73,</p>
                     <p>Email: <a href="mailto:">info@tecnotrade.ru</a></p>
+                    <?php if (!dynamic_sidebar("first-widget-area") ) : ?><?php endif; ?>
                 </div>
                 <div class="col-md-4">
                     <div class="social__footer">
@@ -22,6 +23,7 @@
                         <li><a href="">Кондиционеры для белья PROSPER</a></li>
                         <li><a href="">Гель-капсулы PROSPER</a></li>
                     </ul>
+                    <?php if (!dynamic_sidebar("second-widget-area") ) : ?><?php endif; ?>
                 </div>
                 <div class="col-md-4">
                     <div class="phone">+7 (495) <span>134 37 73</span></div>
@@ -31,6 +33,7 @@
                         <li><a href="">Средства для дома PROSPER</a></li>
                         <li><a href="">PROSPER Professional</a></li>
                     </ul>
+                    <?php if (!dynamic_sidebar("third-widget-area") ) : ?><?php endif; ?>
                 </div>
             </div>
         </div>
