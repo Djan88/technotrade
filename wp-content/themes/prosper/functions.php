@@ -12,7 +12,7 @@
       'description' => __('Виджеты в первый блок'),
       'before_widget' => '<div class="widget block">',
       'after_widget' => '</div>',
-      'before_title' => '<h3">',
+      'before_title' => '<h3>',
       'after_title' => '</h3>',
   ));
 ?>
@@ -24,7 +24,7 @@
       'description' => __('Виджеты в первый блок'),
       'before_widget' => '<div class="widget block">',
       'after_widget' => '</div>',
-      'before_title' => '<h3">',
+      'before_title' => '<h3>',
       'after_title' => '</h3>',
   ));
 ?>
@@ -36,7 +36,7 @@
       'description' => __('Виджеты в первый блок'),
       'before_widget' => '<div class="widget block">',
       'after_widget' => '</div>',
-      'before_title' => '<h3">',
+      'before_title' => '<h3>',
       'after_title' => '</h3>',
   ));
 ?>
