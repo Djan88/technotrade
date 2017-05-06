@@ -30,11 +30,14 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+          <form role="search" class="navbar-form navbar-right" method="get" id="searchform" action="<?php bloginfo('siteurl'); ?>">
+            <div id="search-input" class="form-group">
+              <input id="search_text" placeholder="Что искать?" class="form-control" type="text" value="" name="s" id="s">
             </div>
-            <button type="submit" class="btn btn-default"><img src="<?php bloginfo('template_url'); ?>/img/search-icon.png" alt=""></button>
+            <div id="jx-search-submit">
+              <button type="submit" class="btn btn-default"><img src="<?php bloginfo('template_url'); ?>/img/search-icon.png" alt=""></i></button>
+              <!-- Submit Button -->  
+            </div>
           </form>
           <?php 
             $menu = wp_nav_menu(array('menu' => 'Main Navigation', 'container' => false, menu_class => 'nav navbar-nav navbar-right' ));
