@@ -65,9 +65,7 @@
     <!-- Contact -->
     <?php
       // The Query
-      $query = new WP_Query( 
-        array( 'page_id' => '98' ) 
-      );
+      $query = new WP_Query( 'page_id=98' );
       while ($query->have_posts()) : $query->the_post();
 
         if( have_rows('slider') ):
