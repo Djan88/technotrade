@@ -14,26 +14,45 @@
         </div>
       </div>
       <!-- Contact -->
-      <section class="slider">
-        <div class="slider__container" >
-          <div class="slider__item">
-            <img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg" alt="" class="slide__img">
-            <div class="content__slider">
-              <h1>Неужели это <br>моя посуда?</h1>
-              <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН </p>
-              <a href="">узнать больше</a>
+      <?php if( have_rows('slider') ): ?>
+        <section class="slider">
+          <div class="slider__container" >
+          <?php while( have_rows('slider') ): the_row(); 
+            // vars
+            $slider_img = get_sub_field('slider_img');
+            $slider_title = get_sub_field('slider_title');
+            $slider_subtitle = get_sub_field('slider_subtitle');
+            $slider_btn_text = get_sub_field('slider_btn_text');
+            $slider_btn_link = get_sub_field('slider_btn_link');
+            ?>
+            <li class="slide">
+              <?php if( $link ): ?>
+                <a href="<?php echo $link; ?>">
+              <?php endif; ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+              <?php if( $link ): ?>
+                </a>
+              <?php endif; ?>
+                <?php echo $content; ?>
+            </li>
+            <div class="slider__item">
+              <img src="<?php echo $slider_img; ?>" alt="" class="slide__img">
+              <div class="content__slider">
+                <?php if( $slider_title ): ?>
+                  <h1><?php echo $slider_title; ?></h1>
+                <?php endif; ?>
+                <?php if( $slider_subtitle ): ?>
+                  <p><?php echo $slider_subtitle; ?></p>
+                <?php endif; ?>
+                <?php if( $slider_btn_link ): ?>
+                  <a href="<?php echo $slider_btn_link; ?>"><?php echo $slider_btn_text; ?></a>
+                <?php endif; ?>
+              </div>
             </div>
+          <?php endwhile; ?>
           </div>
-          <div class="slider__item">
-            <img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg" alt="" class="slide__img">
-            <div class="content__slider">
-              <h1>Неужели это <br>моя посуда?</h1>
-              <p>ТАБЛЕТКИ ДЛЯ <br> ПОСУДОМОЕЧНЫХ МАШИН </p>
-              <a href="">узнать больше</a>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      <?php endif; ?>
       <!-- Slider -->
 
         <section class="news">
