@@ -63,4 +63,51 @@
       </div>
     </div>
     <!-- Contact -->
-    
+    <?php
+      // The Query
+      $query = new WP_Query( 'page_id=98' );
+      while ($query->have_posts()) : $query->the_post();
+
+        if( have_rows('slider') ):
+          echo '<section class="slider">';
+            echo '<div class="slider__container" >';
+            while( have_rows('slider') ): the_row();
+              // vars
+              $slider_img = get_sub_field('slider_img');
+              $slider_title = get_sub_field('slider_title');
+              $slider_subtitle = get_sub_field('slider_subtitle');
+              $slider_btn_text = get_sub_field('slider_btn_text');
+              $slider_btn_link = get_sub_field('slider_btn_link');
+
+              echo '<div class="slider__item">';
+                echo '<img src="';
+                echo $slider_img;
+                echo '" alt="" class="slide__img">';
+                echo '<div class="content__slider">';
+                  if( $slider_title ):
+                    echo '<h1>';
+                    echo $slider_title;
+                    echo '</h1>';
+                  endif;
+                  if( $slider_subtitle ):
+                    echo '<p>';
+                    echo $slider_subtitle;
+                    echo '</p>';
+                  endif;
+                  if( $slider_btn_link ):
+                    echo '<a href="';
+                    echo $slider_btn_link;
+                    echo '">';
+                    echo $slider_btn_text;
+                    echo '</a>';
+                  endif;
+                echo '</div>';
+              echo '</div>';
+            endwhile;
+            echo '</div>';
+          echo '</section>';
+        endif;
+        // Slider
+      endwhile;
+      wp_reset_postdata(); 
+    ?>
