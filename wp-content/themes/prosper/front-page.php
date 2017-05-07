@@ -51,33 +51,39 @@
                   <h2>Новости</h2>
               </div>
           </div>
-          <?php
-            // задаем нужные нам критерии выборки данных из БД
-            $args = array(
-              'posts_per_page' => 2,
-              'category_name' => 'novosti-i-stati'
-            );
-
-            $query = new WP_Query( $args );
-
-            // Цикл
-            if ( $query->have_posts() ) {
-              echo '<div class="container">';
-              echo '<div class="row">';
-              while ( $query->have_posts() ) {
-                $query->the_post();
-                echo '<div class="col-md-6">';
-                  
-                echo '</div">';
-              }
-              echo '</div>';
-              echo '</div>';
-            } else {
-              // Постов не найдено
-            }
-            /* Возвращаем оригинальные данные поста. Сбрасываем $post. */
-            wp_reset_postdata();
-          ?>
+          <div class="container">
+            <div class="row">
+                <?php
+                  // The Query
+                  $query = new WP_Query( 
+                    array( 'category_name' => 'novosti-i-stati', 'posts_per_page' => '2' ) 
+                  );
+                  while ($query->have_posts()) : $query->the_post();
+                    echo '<div class="col-md-6">';
+                      echo '<div class="news__block">';
+                        echo '<div class="col-md-4">';
+                          echo the_post_thumbnail(array(200,200));
+                        echo '</div">';
+                        echo '<div class="col-md-8">';
+                          echo '<h3>';
+                          echo the_time('d.m.Y');
+                          echo ' ';
+                          echo the_title();
+                          echo '</h3>';
+                          echo '<p>';
+                          echo the_content();
+                          echo '</p>';
+                          echo '<a href="';
+                          echo the_permalink();
+                          echo '"> > </a>';
+                        echo '</div">';
+                      echo '</div">';
+                    echo '</div">';
+                endwhile;
+                wp_reset_postdata(); 
+              ?>
+            </div>
+          </div>
         </section>
         <!-- News -->
 
