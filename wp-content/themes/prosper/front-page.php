@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
         <section class="news">
           <div class="title-bg">
               <div class="container">
