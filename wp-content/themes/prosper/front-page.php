@@ -25,16 +25,6 @@
             $slider_btn_text = get_sub_field('slider_btn_text');
             $slider_btn_link = get_sub_field('slider_btn_link');
             ?>
-            <li class="slide">
-              <?php if( $link ): ?>
-                <a href="<?php echo $link; ?>">
-              <?php endif; ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-              <?php if( $link ): ?>
-                </a>
-              <?php endif; ?>
-                <?php echo $content; ?>
-            </li>
             <div class="slider__item">
               <img src="<?php echo $slider_img; ?>" alt="" class="slide__img">
               <div class="content__slider">
