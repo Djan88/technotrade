@@ -79,7 +79,7 @@
               echo '</p>';
               echo '<a href="';
               echo get_the_permalink();
-              echo '"> > </a>'
+              echo '"> > </a>';
               echo '</div">';
               echo '</div">';
               echo '</div">';
