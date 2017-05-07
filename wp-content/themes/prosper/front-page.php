@@ -46,39 +46,56 @@
       <!-- Slider -->
 
         <section class="news">
-            <div class="title-bg">
-                <div class="container">
-                    <h2>Новости</h2>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="news__block">
-                            <div class="col-md-4">
-                                <img src="<?php bloginfo('template_url'); ?>/img/news1.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3>15.04.17 Мы говорим нет вредным добавкам</h3>
-                                <p>Продукция PROSPER не содержит опасных для здоровья человека и планеты веществ, таких как фосфаты, хлор, продукты нефтехимии, искусственные ароматизаторы.</p>
-                                <a href=""> > </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="news__block">
-                            <div class="col-md-4">
-                                <img src="<?php bloginfo('template_url'); ?>/img/sert.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3>15.04.17 Победа в выставке - Стиральные порошки "Prosper"</h3>
-                                <p>Мы уже завоевали популярность на значительной территории Таможенного союза, странах Ближнего Востока и Евросоюза. ароматизаторы.</p>
-                                <a href=""> > </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="title-bg">
+              <div class="container">
+                  <h2>Новости</h2>
+              </div>
+          </div>
+          <?php
+            // задаем нужные нам критерии выборки данных из БД
+            $args = array(
+              'posts_per_page' => 2,
+              'category_name' => 'novosti-i-stati'
+            );
+
+            $query = new WP_Query( $args );
+
+            // Цикл
+            if ( $query->have_posts() ) {
+              echo '<div class="container">';
+              echo '<div class="col-md-6">';
+              echo '<div class="news__block">';
+              echo '<div class="col-md-4">';
+              echo get_the_post_thumbnail(array(200,200));
+              echo '</div">';
+              echo '<div class="col-md-8">';
+              echo '<h3>';
+              echo the_time('d.m.Y');
+              echo ' ';
+              echo get_the_title();
+              echo '</h3>';
+              echo '<p>';
+              echo get_the_content();
+              echo '</p>';
+              echo '<a href="';
+              echo get_the_permalink();
+              echo '"> > </a>'
+              echo '</div">';
+              echo '</div">';
+              echo '</div">';
+              while ( $query->have_posts() ) {
+                $query->the_post();
+                echo '<div class="row">';
+                echo '<li>' . get_the_title() . '</li>';
+              }
+              echo '</div>';
+              echo '</div>';
+            } else {
+              // Постов не найдено
+            }
+            /* Возвращаем оригинальные данные поста. Сбрасываем $post. */
+            wp_reset_postdata();
+          ?>
         </section>
         <!-- News -->
 
