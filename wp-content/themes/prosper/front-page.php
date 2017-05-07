@@ -63,7 +63,7 @@
                       echo '<div class="news__block">';
                         echo '<div class="col-md-4">';
                           echo the_post_thumbnail(array(200,200));
-                        echo '</div">';
+                        echo '</div>';
                         echo '<div class="col-md-8">';
                           echo '<h3>';
                           echo the_time('d.m.Y');
@@ -76,9 +76,9 @@
                           echo '<a href="';
                           echo the_permalink();
                           echo '"> > </a>';
-                        echo '</div">';
-                      echo '</div">';
-                    echo '</div">';
+                        echo '</div>';
+                      echo '</div>';
+                    echo '</div>';
                 endwhile;
                 wp_reset_postdata(); 
               ?>
