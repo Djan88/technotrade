@@ -66,7 +66,7 @@
               echo '<div class="col-md-6">';
               echo '<div class="news__block">';
               echo '<div class="col-md-4">';
-              echo get_the_post_thumbnail(array(200,200));
+              echo the_post_thumbnail(array(200,200));
               echo '</div">';
               echo '<div class="col-md-8">';
               echo '<h3>';
