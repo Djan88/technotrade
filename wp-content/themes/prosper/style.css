@@ -941,7 +941,8 @@ footer {
     .slider .slider__container .slider__item .content__slider {
       position: absolute;
       top: 50%;
-      left: 66%;
+      left: 56%;
+      max-width: 450px;
       -webkit-transform: translateY(-35%);
           -ms-transform: translateY(-35%);
               transform: translateY(-35%);
