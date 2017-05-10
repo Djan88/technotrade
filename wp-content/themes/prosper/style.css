@@ -1142,3 +1142,22 @@ ul#menu-sub-navigation
   padding: 0;
   list-style: none;
 }
+.sub_nav a 
+{
+  display: block;
+  padding: 5px;
+  background: #eee;
+  border-bottom: 1px solid #9a2687;
+  border-top: 1px solid #3a0e33;
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #751f67;
+}
+.sub_nav li.current-menu-item a, .sub_nav a:hover
+{
+  background: #7c1e6c;
+  text-decoration: none;
+}
