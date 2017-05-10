@@ -14,13 +14,13 @@
       <div class="container">
         <div class="row">
           <?php if (is_category('2') || is_category('3') || is_category('4') || is_category('5') || is_category('6') || is_category('7') || is_category('8') || is_category('9') || is_category('10')) { ?>
-            <div class="col-md-3 col-xs-12">
+            <div class="col-md-4 col-xs-12">
               <?php 
                 $menu_sub = wp_nav_menu(array('menu' => 'Sub Navigation', 'container' => false, menu_class => 'sub_nav' ));
                 echo $menu_sub;
               ?>
             </div>
-            <div class="col-md-9 col-xs-12">
+            <div class="col-md-8 col-xs-12">
               <div class="row">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                   <div class="col-md-4 product_item">
