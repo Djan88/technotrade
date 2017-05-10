@@ -653,9 +653,8 @@ header {
   header .nav li 
   {
     position: relative;
-    border-left: 1px solid #ad2a95;
-    border-right: 1px solid #400f37;
-    border-image: url(img/menu_border.png);
+    border-left: 1px solid #9a2687;
+    border-right: 2px solid #3a0e33;
   }
     header .nav li:first-child::before {
       content: "";
