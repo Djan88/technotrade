@@ -1118,10 +1118,12 @@ footer {
 {
   list-style: none;
 }
-.product_item
+.product_item a 
 {
+  display: block;
+  position: relative;
   text-align: center;
-  height: 300px;
+  height: 320px;
 }
 .product_item h4
 {
@@ -1130,6 +1132,13 @@ footer {
 }
 .product_item img 
 {
-  max-width: 100%;
+  width: 100%;
+  max-width: 150px;
   height: auto;
+}
+ul#menu-sub-navigation 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

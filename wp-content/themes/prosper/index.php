@@ -13,7 +13,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <?php if (is_category('2')) { ?>
+          <?php if (is_category('2') || is_category('3') || is_category('4') || is_category('5') || is_category('6') || is_category('7') || is_category('8') || is_category('9') || is_category('10')) { ?>
             <div class="col-md-3 col-xs-12">
               <?php 
                 $menu_sub = wp_nav_menu(array('menu' => 'Sub Navigation', 'container' => false, menu_class => 'sub_nav' ));
