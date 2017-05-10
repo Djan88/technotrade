@@ -853,12 +853,14 @@ footer {
     background: -webkit-linear-gradient(top, #ffffff 0%, #fffaeb 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #fffaeb 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fffaeb',GradientType=0 ); }
-  .product .product__block__header {
+  .product .product__block__header 
+  {
     background: #d4d1d1;
     background: -webkit-linear-gradient(top, #d4d1d1 0%, #c4c1c1 100%);
     background: linear-gradient(to bottom, #d4d1d1 0%, #c4c1c1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d1d1', endColorstr='#c4c1c1',GradientType=0 );
-    padding: 10px 20px; }
+    padding: 10px 20px 1px; 
+  }
     .product .product__block__header h3 {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
@@ -1145,11 +1147,11 @@ ul#menu-sub-navigation
 .sub_nav a 
 {
   display: block;
-  padding: 5px;
+  padding: 7px;
   border-bottom: 1px solid #9a2687;
   border-top: 1px solid #3a0e33;
   margin-top: 0px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
