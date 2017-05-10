@@ -22,7 +22,22 @@
             </div>
             <div class="col-md-9 col-xs-12">
               <div class="row">
-                
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                  <div class="col-md-3 product_item">
+                    <a href="<?php the_permalnk(); ?>">
+                      <?php the_thumbnail('thumbnail'); ?>
+                      <h4><?php the_title(); ?></h4>
+                    </a>
+                  </div>
+                <?php endwhile; else: ?>
+                  <section>
+                    <div class="container">
+                      <div class="row" style="text-align: center;">
+                        <?php _e('Sorry, no posts matched your criteria.'); ?>
+                      </div>
+                    </div>
+                  </section> 
+                <?php endif; ?>
               </div>
             </div>
             <?php } else { ?>
