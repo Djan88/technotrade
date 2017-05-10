@@ -24,9 +24,9 @@
               <div class="row">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                   <div class="col-md-3 product_item">
-                    <a href="<?php the_permalnk(); ?>">
-                      <?php the_thumbnail('thumbnail'); ?>
-                      <h4><?php the_title(); ?></h4>
+                    <a href="<?php echo the_permalnk(); ?>">
+                      <?php echo the_post_thumbnail('thumbnail'); ?>
+                      <h4><?php echo the_title(); ?></h4>
                     </a>
                   </div>
                 <?php endwhile; else: ?>
