@@ -1,5 +1,10 @@
 <?php get_header(); ?>
-        <section class="o-brende">
+        <section class="news">
+            <div class="title-bg">
+                <div class="container">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

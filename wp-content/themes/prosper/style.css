@@ -555,7 +555,7 @@ main {
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: 100px; }
+  left: 20px; }
   [dir="rtl"] .slick-prev {
     left: auto;
     right: -25px; }
@@ -565,7 +565,7 @@ main {
       content: "→"; }
 
 .slick-next {
-  right: 100px; }
+  right: 50px; }
   [dir="rtl"] .slick-next {
     left: -25px;
     right: auto; }
