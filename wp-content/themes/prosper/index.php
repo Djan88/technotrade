@@ -2,7 +2,13 @@
         <section class="news">
             <div class="title-bg">
                 <div class="container">
-                    <h2><?php the_title(); ?></h2>
+                    <h2>
+                      <?php if (is_category()) { ?>
+                        <?php single_cat_title(); ?>
+                      <?php } else {?>
+                        <?php the_title(); ?>
+                      <?php } ?>
+                    </h2>
                 </div>
             </div>
             <div class="container">
@@ -26,7 +32,6 @@
             </div>
         </section>
         <!-- o-brende -->
-
     </main>
     <!-- Main -->
 <?php get_footer(); ?>
