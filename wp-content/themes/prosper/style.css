@@ -816,7 +816,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 42px; }
+    margin-top: 10px; }
     footer .list__link li a {
       background: url(img/list-icon.png) 0 center no-repeat;
       display: block;
@@ -825,7 +825,10 @@ footer {
       color: #faf7f7;
       line-height: 26px;
       font-family: 'Open Sans', sans-serif;
-      font-weight: 400; }
+      font-weight: 400; 
+      padding-top: 13px;
+      background-position: 0 19px;
+    }
 
 .o-brende {
   background-color: #fff;
