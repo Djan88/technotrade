@@ -23,12 +23,11 @@
             <div class="col-md-9 col-xs-12">
               <div class="row">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                  <h2><?php the_title(); ?></h2>
-                  <p>
-                    <?php
-                      echo the_content();
-                    ?>
-                  </p>
+                  <div class="col-md-3 product_item">
+                    <a href="<?php the_permalnk(); ?>">
+                      <h4><?php the_title(); ?></h4>
+                    </a>
+                  </div>
                 <?php endwhile; else: ?>
                   <section>
                     <div class="container">
