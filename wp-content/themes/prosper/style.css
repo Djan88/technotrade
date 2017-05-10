@@ -1128,3 +1128,8 @@ footer {
   font-size: 16px;
   font-weight: 400;
 }
+.product_item img 
+{
+  max-width: 100%;
+  height: auto;
+}

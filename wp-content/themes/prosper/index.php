@@ -23,7 +23,7 @@
             <div class="col-md-9 col-xs-12">
               <div class="row">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                  <div class="col-md-3 product_item">
+                  <div class="col-md-4 product_item">
                     <a href="<?php the_permalink(); ?>">
                       <?php the_post_thumbnail(array(300, 300)); ?>
                       <h4><?php the_title(); ?></h4>
