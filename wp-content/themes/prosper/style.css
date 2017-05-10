@@ -1118,3 +1118,13 @@ footer {
 {
   list-style: none;
 }
+.product_item
+{
+  text-align: center;
+  height: 300px;
+}
+.product_item h4
+{
+  font-size: 16px;
+  font-weight: 400;
+}
