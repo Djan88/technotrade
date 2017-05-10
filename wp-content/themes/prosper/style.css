@@ -650,6 +650,11 @@ header {
         margin-left: 144px; } }
   header .navbar-toggle .icon-bar {
     background-color: #fff; }
+  #menu-main-navigation 
+  {
+    border-left: 2px solid #3a0e33;
+    border-right: 2px solid #3a0e33;
+  }
   header .nav li 
   {
     position: relative;

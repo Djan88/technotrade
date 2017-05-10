@@ -40,7 +40,7 @@
             </div>
           </form>
           <?php 
-            $menu = wp_nav_menu(array('menu' => 'Main Navigation', 'container' => false, menu_class => 'nav navbar-nav navbar-right' ));
+            $menu = wp_nav_menu(array('menu' => 'Main Navigation', 'container' => false, menu_class => 'nav navbar-nav' ));
             echo $menu;
           ?> 
         </div><!-- /.navbar-collapse -->
