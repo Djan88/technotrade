@@ -650,10 +650,13 @@ header {
         margin-left: 144px; } }
   header .navbar-toggle .icon-bar {
     background-color: #fff; }
-  header .nav li {
+  header .nav li 
+  {
     position: relative;
     border-left: 1px solid #ad2a95;
-    border-right: 1px solid #400f37; }
+    border-right: 1px solid #400f37;
+    border-image: url(img/menu_border.png);
+  }
     header .nav li:first-child::before {
       content: "";
       position: absolute;
@@ -698,7 +701,7 @@ header {
       padding: 0; }
 header .navbar-form .form-control 
 {
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #3f0c39;
   border: 1px solid #3f0c39;
   color: #fff;
@@ -1010,7 +1013,7 @@ footer {
     top: 20px;
     z-index: 1000; }
     .contact .container .contact__block .zvonok {
-      border-radius: 4px;
+      border-radius: 10px;
       border: 1px solid #7a246c;
       display: inline-block;
       padding: 10px 20px;
